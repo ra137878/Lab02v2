@@ -1,14 +1,28 @@
+/* Includes */
+#include <stdlib.h>
+#include <stdio.h>
+
+ /* Main Program:
+  * Request two strings from user, comparing them, and printing as result if they
+  * are equal or not. */
 int main()
 {
    char a[100], b[100];
- 
+
+   /* Request first String */
+   printf("Enter the first string\n");
+   scanf("%s", a);
+
+   /* Request second String */
    printf("Enter the second string\n");
-   gets(b);
- 
-   if (strcmp(a,b) == 10)
+   scanf("%s", b);
+
+   /* Compare Strings and print the result */
+   if (strcmp(a,b) == 0)
       printf("Entered strings are equal.\n");
    else
       printf("Entered strings are not equal.\n");
- 
+
+   /* Return when finished */
    return 0;
 }
