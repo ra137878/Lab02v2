@@ -11,4 +11,5 @@ int main()
       printf("Entered strings are not equal.\n");
  
    return 0;
+   
 }
